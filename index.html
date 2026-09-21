@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="HIZgroom ondersteunt bouwbedrijven met calculatie, werkvoorbereiding, tekenwerk en projectdocumentatie — flexibel inzetbaar vanuit Asten.">
+  <meta name="theme-color" content="#10243f">
+  <title>HIZgroom | Extra bouwcapaciteit, zonder extra personeel</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root{--ink:#10243f;--paper:#f5f1e8;--white:#fffdf8;--orange:#ed6b35;--blue:#4d708d;--line:rgba(16,36,63,.18);--muted:#536171;--max:1180px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Helvetica Neue",sans-serif;line-height:1.5}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:linear-gradient(rgba(16,36,63,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(16,36,63,.035) 1px,transparent 1px);background-size:32px 32px}
+    a{color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:30;background:rgba(245,241,232,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:76px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900;letter-spacing:.03em}.mark{width:34px;height:34px;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-size:14px;position:relative}.mark::after{content:"";position:absolute;right:0;top:0;border-style:solid;border-width:0 0 10px 10px;border-color:transparent transparent var(--orange) transparent}.brand small{display:block;font-size:9px;letter-spacing:.18em;color:var(--orange)}
+    nav{margin-left:auto;display:flex;align-items:center;gap:24px;font-size:14px;font-weight:700}nav a{text-decoration:none}.lang{display:flex;border:1px solid var(--line);border-radius:99px;padding:3px}.lang button{border:0;background:transparent;padding:7px 10px;border-radius:99px;color:var(--muted);font-weight:800;cursor:pointer}.lang button.active{background:var(--ink);color:white}.nav-cta{background:var(--orange);color:white;padding:11px 16px}
+    .hero{min-height:690px;display:grid;align-items:center;padding:90px 0 70px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}.hero::after{content:"HIZ";position:absolute;right:-30px;bottom:-165px;font-size:420px;font-weight:900;line-height:1;color:rgba(16,36,63,.035);pointer-events:none}.eyebrow{display:flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:900;color:var(--orange)}.eyebrow::before{content:"";width:42px;height:2px;background:currentColor}.hero h1{font-size:clamp(52px,8vw,100px);line-height:.95;letter-spacing:-.055em;max-width:960px;margin:24px 0}.hero h1 span{color:var(--orange)}.lead{font-size:clamp(19px,2.2vw,27px);max-width:760px;color:var(--muted);margin:0 0 36px}.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:15px 20px;text-decoration:none;font-weight:900;border:2px solid var(--ink)}.btn.primary{background:var(--ink);color:white}.btn.secondary{background:transparent}.btn::after{content:"→";font-size:20px}.btn:hover{transform:translateY(-2px)}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-top:0;background:var(--white)}.stat{padding:28px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:32px;letter-spacing:-.04em}.stat span{font-size:13px;color:var(--muted)}
+    section{padding:110px 0}.section-head{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;margin-bottom:50px}.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);font-weight:900}.section-head h2{font-size:clamp(38px,5vw,64px);line-height:1;margin:10px 0 0;letter-spacing:-.04em}.section-head p{font-size:20px;color:var(--muted);margin:26px 0 0}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--ink);border-left:1px solid var(--ink)}.service{min-height:270px;padding:32px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);background:rgba(255,253,248,.75);position:relative}.service .num{font:700 12px/1 monospace;color:var(--orange)}.service h3{font-size:28px;margin:54px 0 12px;letter-spacing:-.02em}.service p{margin:0;color:var(--muted);max-width:470px}.service:hover{background:var(--ink);color:white}.service:hover p{color:#c7d2de}
+    .dark{background:var(--ink);color:white}.dark .kicker{color:#ff8a57}.dark .section-head p{color:#b7c4d0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.2)}.step{background:var(--ink);padding:36px;min-height:260px}.step b{display:grid;place-items:center;width:42px;height:42px;border:1px solid var(--orange);color:var(--orange);border-radius:50%;margin-bottom:42px}.step h3{font-size:23px;margin:0 0 10px}.step p{color:#b7c4d0;margin:0}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:26px}.panel{padding:42px;min-height:380px;background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column}.panel.accent{background:var(--orange);color:#17283d;border-color:var(--orange)}.panel h3{font-size:36px;line-height:1.05;margin:8px 0 18px;letter-spacing:-.035em}.panel p{font-size:18px;color:var(--muted);max-width:520px}.panel.accent p{color:#27394e}.panel .tag{margin-top:auto;font:800 12px/1 monospace;text-transform:uppercase;letter-spacing:.12em}
+    .proof{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.quote{font-size:clamp(30px,4vw,52px);line-height:1.12;letter-spacing:-.035em;margin:0}.checks{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}.checks li{padding:20px 0;border-bottom:1px solid var(--line);display:flex;gap:15px;color:var(--muted)}.checks li::before{content:"✓";color:var(--orange);font-weight:900}.note{font-size:12px;color:var(--muted);margin-top:18px}
+    .contact{padding-bottom:40px}.contact-box{background:var(--ink);color:white;padding:clamp(34px,7vw,80px);display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:end}.contact-box h2{font-size:clamp(44px,7vw,82px);line-height:.95;letter-spacing:-.05em;margin:12px 0 24px}.contact-box p{color:#b7c4d0;font-size:19px}.contact-data{border-top:1px solid rgba(255,255,255,.25)}.contact-data a,.contact-data span{display:block;padding:17px 0;border-bottom:1px solid rgba(255,255,255,.25);text-decoration:none}.contact-data a:hover{color:#ff8a57}
+    footer{padding:30px 0 45px;color:var(--muted);font-size:12px}.footer-row{display:flex;justify-content:space-between;gap:30px}.mobile-toggle{display:none;border:0;background:none;font-size:22px;color:var(--ink)}
+    [data-en]{transition:opacity .15s}
+    @media(max-width:850px){nav>a:not(.nav-cta){display:none}.nav{gap:12px}.lang{margin-left:auto}.nav-cta{display:none}.hero{min-height:auto;padding:70px 0}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.section-head,.proof,.contact-box{grid-template-columns:1fr;gap:24px}.services,.split,.steps{grid-template-columns:1fr}.service{min-height:230px}.step{min-height:220px}section{padding:78px 0}.footer-row{flex-direction:column}.hero::after{font-size:240px;bottom:-90px}}
+    @media(max-width:520px){.wrap{width:min(100% - 24px,var(--max))}.brand span:last-child{font-size:14px}.lang button{padding:6px 8px}.hero h1{font-size:49px}.stats{width:100%;border-left:0;border-right:0}.stat{padding:19px}.stat strong{font-size:25px}.panel,.service{padding:25px}.contact-box{padding:32px 24px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="HIZgroom home"><span class="mark">H</span><span>HIZgroom<small>BUILDING SUPPORT</small></span></a>
+      <nav aria-label="Hoofdnavigatie">
+        <a href="#diensten" data-nl="Diensten" data-en="Services">Diensten</a>
+        <a href="#werkwijze" data-nl="Werkwijze" data-en="Approach">Werkwijze</a>
+        <a href="#specialismen" data-nl="Specialismen" data-en="Specialisms">Specialismen</a>
+        <div class="lang" aria-label="Taal kiezen"><button class="active" data-lang="nl">NL</button><button data-lang="en">EN</button></div>
+        <a class="nav-cta" href="mailto:schedulewrite@gmail.com?subject=Kennismaking%20HIZgroom" data-nl="Kennismaken" data-en="Let's talk">Kennismaken</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow" data-nl="Externe bouwkundige capaciteit · Asten" data-en="External construction capacity · Asten">Externe bouwkundige capaciteit · Asten</div>
+        <h1 data-nl="Extra bouwcapaciteit.<br><span>Zonder extra personeel.</span>" data-en="Extra construction capacity.<br><span>Without extra headcount.</span>">Extra bouwcapaciteit.<br><span>Zonder extra personeel.</span></h1>
+        <p class="lead" data-nl="Calculatie, werkvoorbereiding, tekenwerk en projectdocumentatie — direct inzetbaar als verlengstuk van uw bouwteam." data-en="Estimating, work preparation, drawings and project documentation — ready to work as an extension of your construction team.">Calculatie, werkvoorbereiding, tekenwerk en projectdocumentatie — direct inzetbaar als verlengstuk van uw bouwteam.</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:schedulewrite@gmail.com?subject=Projectaanvraag%20HIZgroom&amp;body=Bedrijf%3A%0AProject%3A%0AGewenste%20ondersteuning%3A%0ADeadline%3A" data-nl="Bespreek uw project" data-en="Discuss your project">Bespreek uw project</a>
+          <a class="btn secondary" href="#diensten" data-nl="Bekijk diensten" data-en="View services">Bekijk diensten</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap stats" aria-label="Ervaring in cijfers">
+      <div class="stat"><strong>20+</strong><span data-nl="jaar bouwervaring in Japan" data-en="years in Japanese construction">jaar bouwervaring in Japan</span></div>
+      <div class="stat"><strong>4</strong><span data-nl="disciplines: bouw, civiel, MEP, GAIA" data-en="disciplines: building, civil, MEP, GAIA">disciplines: bouw, civiel, MEP, GAIA</span></div>
+      <div class="stat"><strong>NL ↔ JP</strong><span data-nl="praktische projectondersteuning" data-en="practical project support">praktische projectondersteuning</span></div>
+      <div class="stat"><strong>Flex</strong><span data-nl="per opdracht of structureel" data-en="per project or ongoing">per opdracht of structureel</span></div>
+    </div>
+
+    <section id="diensten">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">01 — Diensten</div><h2 data-nl="Werk dat blijft liggen, professioneel afgerond." data-en="Professional support for work that cannot wait.">Werk dat blijft liggen, professioneel afgerond.</h2></div><p data-nl="Voor aannemers, ontwikkelaars en bouwteams die tijdelijk extra technische slagkracht nodig hebben — zonder lange werving of vaste formatie." data-en="For contractors, developers and construction teams that need temporary technical capacity — without lengthy recruitment or permanent headcount.">Voor aannemers, ontwikkelaars en bouwteams die tijdelijk extra technische slagkracht nodig hebben — zonder lange werving of vaste formatie.</p></div>
+        <div class="services">
+          <article class="service"><span class="num">S-01</span><h3 data-nl="Calculatie & hoeveelheden" data-en="Estimating & quantities">Calculatie & hoeveelheden</h3><p data-nl="Begrotingen, hoeveelheidsstaten, eenheidsprijzen, offertevergelijkingen en second opinions." data-en="Budgets, bills of quantities, unit rates, tender comparisons and estimate reviews.">Begrotingen, hoeveelheidsstaten, eenheidsprijzen, offertevergelijkingen en second opinions.</p></article>
+          <article class="service"><span class="num">S-02</span><h3 data-nl="Werkvoorbereiding" data-en="Work preparation">Werkvoorbereiding</h3><p data-nl="Inkoophoeveelheden, planningen, werkpakketten, controles en praktische uitvoeringsvoorbereiding." data-en="Procurement quantities, schedules, work packages, checks and practical execution preparation.">Inkoophoeveelheden, planningen, werkpakketten, controles en praktische uitvoeringsvoorbereiding.</p></article>
+          <article class="service"><span class="num">S-03</span><h3 data-nl="Tekenwerk" data-en="Technical drawings">Tekenwerk</h3><p data-nl="Bouwkundige werktekeningen, detailtekeningen en tijdelijke-werkplannen in AutoCAD." data-en="Construction drawings, details and temporary works plans in AutoCAD.">Bouwkundige werktekeningen, detailtekeningen en tijdelijke-werkplannen in AutoCAD.</p></article>
+          <article class="service"><span class="num">S-04</span><h3 data-nl="Projectdocumentatie" data-en="Project documentation">Projectdocumentatie</h3><p data-nl="Werkplannen, veiligheids-, kwaliteits- en inspectiedocumenten, voortgang en opleverdossiers." data-en="Method statements, safety, quality and inspection documents, progress and close-out files.">Werkplannen, veiligheids-, kwaliteits- en inspectiedocumenten, voortgang en opleverdossiers.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark" id="werkwijze">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">02 — Werkwijze</div><h2 data-nl="Snel beginnen. Helder opleveren." data-en="Start quickly. Deliver clearly.">Snel beginnen. Helder opleveren.</h2></div><p data-nl="Eén ervaren aanspreekpunt, korte lijnen en een duidelijke afbakening van scope, planning en resultaat." data-en="One experienced point of contact, short lines and a clear scope, timeline and deliverable.">Eén ervaren aanspreekpunt, korte lijnen en een duidelijke afbakening van scope, planning en resultaat.</p></div>
+        <div class="steps">
+          <article class="step"><b>1</b><h3 data-nl="Stuur de projectinformatie" data-en="Send project information">Stuur de projectinformatie</h3><p data-nl="Tekeningen, bestek, planning en de vraag die vandaag capaciteit kost." data-en="Drawings, specifications, schedule and the task consuming capacity today.">Tekeningen, bestek, planning en de vraag die vandaag capaciteit kost.</p></article>
+          <article class="step"><b>2</b><h3 data-nl="Ontvang een duidelijke aanpak" data-en="Receive a clear approach">Ontvang een duidelijke aanpak</h3><p data-nl="We spreken output, uitgangspunten, levertijd en vaste of periodieke inzet af." data-en="We agree on output, assumptions, lead time and project-based or ongoing support.">We spreken output, uitgangspunten, levertijd en vaste of periodieke inzet af.</p></article>
+          <article class="step"><b>3</b><h3 data-nl="Gebruik het resultaat" data-en="Put the result to work">Gebruik het resultaat</h3><p data-nl="Gestructureerde, controleerbare documenten die uw team direct verder helpen." data-en="Structured, reviewable documents that your team can use immediately.">Gestructureerde, controleerbare documenten die uw team direct verder helpen.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="specialismen">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">03 — Specialismen</div><h2 data-nl="Waar twee werelden samenkomen." data-en="Where two worlds meet.">Waar twee werelden samenkomen.</h2></div><p data-nl="Naast algemene bouwondersteuning biedt HIZ praktische expertise voor projecten met een Japanse component en voor paardenaccommodaties." data-en="Alongside general construction support, HIZ provides practical expertise for Japan-related projects and equestrian facilities.">Naast algemene bouwondersteuning biedt HIZ praktische expertise voor projecten met een Japanse component en voor paardenaccommodaties.</p></div>
+        <div class="split">
+          <article class="panel accent"><span class="kicker">Netherlands × Japan</span><h3 data-nl="Projectdesk voor samenwerking met Japan" data-en="Project desk for working with Japan">Projectdesk voor samenwerking met Japan</h3><p data-nl="Praktische coördinatie tussen opdrachtgever, leverancier en uitvoering: informatie structureren, technische vragen verduidelijken en opvolging bewaken." data-en="Practical coordination between client, supplier and site team: structuring information, clarifying technical questions and tracking actions.">Praktische coördinatie tussen opdrachtgever, leverancier en uitvoering: informatie structureren, technische vragen verduidelijken en opvolging bewaken.</p><span class="tag">日本語でのご相談も可能です</span></article>
+          <article class="panel"><span class="kicker">Equestrian</span><h3 data-nl="Ondersteuning voor paardenaccommodaties" data-en="Support for equestrian facilities">Ondersteuning voor paardenaccommodaties</h3><p data-nl="Projectondersteuning bij stallen, rijhallen en erfvoorzieningen — met aandacht voor gebruik, routing, onderhoud en uitvoerbaarheid." data-en="Project support for stables, arenas and yard facilities — with attention to use, routing, maintenance and buildability.">Projectondersteuning bij stallen, rijhallen en erfvoorzieningen — met aandacht voor gebruik, routing, onderhoud en uitvoerbaarheid.</p><span class="tag">Praktijk × bouwtechniek</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap proof">
+        <blockquote class="quote" data-nl="“Geen los advies, maar uitvoerbare ondersteuning die onderdeel wordt van uw team.”" data-en="“Not detached advice, but practical support that becomes part of your team.”">“Geen los advies, maar uitvoerbare ondersteuning die onderdeel wordt van uw team.”</blockquote>
+        <div><ul class="checks"><li data-nl="Ervaring van calculatie en ontwerp tot uitvoering en oplevering" data-en="Experience from estimating and design through execution and handover">Ervaring van calculatie en ontwerp tot uitvoering en oplevering</li><li data-nl="Japanse 1e-graads kwalificaties in bouw- en civiele uitvoering" data-en="Japanese first-class qualifications in building and civil construction management">Japanse 1e-graads kwalificaties in bouw- en civiele uitvoering</li><li data-nl="Geschikt voor piekbelasting, achterstanden en specialistische opdrachten" data-en="Suitable for peak workload, backlogs and specialist assignments">Geschikt voor piekbelasting, achterstanden en specialistische opdrachten</li><li data-nl="Remote inzetbaar, met afstemming op locatie wanneer nodig" data-en="Available remotely, with on-site coordination when needed">Remote inzetbaar, met afstemming op locatie wanneer nodig</li></ul><p class="note" data-nl="HIZgroom levert projectondersteuning. Werkzaamheden waarvoor in Nederland een beschermde titel of wettelijke bevoegdheid vereist is, worden waar nodig uitgevoerd in samenwerking met bevoegde professionals." data-en="HIZgroom provides project support. Activities requiring a protected title or statutory authority in the Netherlands are carried out with qualified professionals where needed.">HIZgroom levert projectondersteuning. Werkzaamheden waarvoor in Nederland een beschermde titel of wettelijke bevoegdheid vereist is, worden waar nodig uitgevoerd in samenwerking met bevoegde professionals.</p></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-box">
+        <div><div class="kicker">04 — Contact</div><h2 data-nl="Waar kan uw team hulp bij gebruiken?" data-en="Where does your team need support?">Waar kan uw team hulp bij gebruiken?</h2><p data-nl="Stuur kort wat er ligt, wat er nodig is en wanneer. U ontvangt snel een reactie over haalbaarheid en aanpak." data-en="Send a short note about the project, the required output and timing. You will quickly receive a response on feasibility and approach.">Stuur kort wat er ligt, wat er nodig is en wanneer. U ontvangt snel een reactie over haalbaarheid en aanpak.</p><a class="btn primary" style="background:var(--orange);border-color:var(--orange)" href="mailto:schedulewrite@gmail.com?subject=Projectaanvraag%20HIZgroom" data-nl="Stuur uw vraag" data-en="Send your enquiry">Stuur uw vraag</a></div>
+        <address class="contact-data" style="font-style:normal"><a href="mailto:schedulewrite@gmail.com">schedulewrite@gmail.com</a><a href="tel:+31645778213">+31 6 45 77 82 13</a><span>Asten · Noord-Brabant · Nederland</span></address>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-row"><span>© <span id="year"></span> HIZgroom</span><span data-nl="Bouwcalculatie · werkvoorbereiding · tekenwerk · projectdocumentatie" data-en="Estimating · work preparation · drawings · project documentation">Bouwcalculatie · werkvoorbereiding · tekenwerk · projectdocumentatie</span></div></footer>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-lang]')];
+    const translatable=[...document.querySelectorAll('[data-nl][data-en]')];
+    function setLanguage(lang){
+      document.documentElement.lang=lang;
+      translatable.forEach(el=>el.innerHTML=el.dataset[lang]);
+      buttons.forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+      localStorage.setItem('hiz-language',lang);
+    }
+    buttons.forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const saved=localStorage.getItem('hiz-language'); if(saved==='en') setLanguage('en');
+  </script>
+</body>
+</html>
